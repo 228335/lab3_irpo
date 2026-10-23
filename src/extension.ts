@@ -43,7 +43,7 @@ export function activate(context: vscode.ExtensionContext) {
                 const joke = jokes[Math.floor(Math.random() * jokes.length)]
                     .replace(/\{a\}/g, a)
                     .replace(/\{b\}/g, b);
-                // Префиксуем каждую строку комментариями
+                // Дополняет каждую строку комментариями
                 code = '// ' + joke.split('\n').join('\n// ');
             }
 
