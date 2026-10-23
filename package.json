@@ -1,0 +1,20 @@
+{
+  "name": "var-blocks",
+  "displayName": "Var Blocks",
+  "version": "0.0.1",
+  "engines": { "vscode": "^1.85.0" },
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      { "command": "var-blocks.generate", "title": "Сгенерировать конструкцию" }
+    ]
+  },
+  "scripts": {
+    "compile": "tsc -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.x",
+    "typescript": "^5.3.0"
+  }
+}
